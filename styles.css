@@ -23,6 +23,7 @@ body{
     padding: 32px;
     margin-bottom: 128px;
     position: relative;
+    box-shadow: 0 0 15px hsla(0, 0%, 4%, 0.221);
 }
 
 .container h1{
@@ -77,6 +78,10 @@ body{
 .container button:hover{
     cursor: pointer;
     box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+.attribution{
+    color:white;
 }
 
 @media (max-width:785px) {
