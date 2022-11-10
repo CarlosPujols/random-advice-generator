@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Manrope;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container{
+    width: 33%;
+    height: 40vh;
+    background-color: hsl(217, 19%, 24%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    margin-bottom: 128px;
+    position: relative;
+}
+
+.container h1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+
+.container p{
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    width: 85%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .divider{
+    width: 100%;
+    height: 5%;
+    background-image: url('images/pattern-divider-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.container button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -32px;
+    left: calc(50% - 32px);
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    background-image: url('images/icon-dice.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+@media (max-width:785px) {
+
+    .container{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width:376px) {
+
+    .container{
+        width: 90%;
+        height: 50vh;
+    }
+
+    .container p{
+        font-size: 5.7vw;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .container .divider{
+        background-image: url('images/pattern-divider-mobile.svg');
+    }
+    
+}
+
+
