@@ -57,7 +57,7 @@ function generateAdvice(){
         output = 'Advice #' + adviceID;
         heading.innerHTML = output;
 
-        advice.innerHTML = adviceText;
+        advice.innerHTML =  '"' + adviceText + '"';
 
     })
 
